@@ -69,13 +69,10 @@ scripts/extract_corpus_metadata.py
 
 # Curated documentation and design sources only.
 docs/*
-!docs/main.md
-!docs/METHODOLOGY.md
 !docs/frontend-template.html
 !docs/product-sections.html
 !docs/product.css
 !docs/product.js
-!docs/DATA.md
 !docs/assets/
 docs/assets/*
 !docs/assets/*.png
@@ -91,3 +88,7 @@ FDE_Take_Home_Assessment_FIRST.pdf
 
 # Preserve vendored source and its license, never nested repository metadata.
 **/.git/
+
+# Publish only the repository's main README; keep other Markdown local.
+*.md
+!/README.md

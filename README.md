@@ -8,7 +8,7 @@ A reproducible speaker-diarization pilot and a proposed methodology for a multil
 
 **24 source recordings · 7 languages · 3 systems · 72 completed inference units**
 
-[Methodology](docs/METHODOLOGY.md) · [Kaggle notebook](kaggle/diarizbench_pilot.ipynb) · [Results](#measured-pilot) · [Product design](#product-design)
+[Methodology](submission/Ayush_Kumar_Q1_Main.pdf) · [Kaggle notebook](kaggle/diarizbench_pilot.ipynb) · [Results](#measured-pilot) · [Product design](#product-design)
 
 </div>
 
@@ -25,7 +25,7 @@ tracks have not been executed.
 
 **No audio is committed to GitHub, including embedded audio in the public HTML.** Obtain source
 data separately or use a local file in the design's listening room. Dataset sources are documented
-[below](#datasets) and in [docs/DATA.md](docs/DATA.md).
+[below](#datasets).
 
 ## Measured pilot
 
@@ -88,7 +88,7 @@ flowchart LR
     G --> H[Publish versioned leaderboard]
 ```
 
-The [main report](docs/METHODOLOGY.md) specifies audiences and decisions, a 12-system comparison catalog,
+The [main report](submission/Ayush_Kumar_Q1_Main.pdf) specifies audiences and decisions, a 12-system comparison catalog,
 a proposed **60-hour development/evaluation collection**, annotation/adjudication, DER/JER and
 coverage metrics, fairness rules, significance testing, operating tracks and reference versioning.
 
@@ -108,13 +108,13 @@ VAD/SAD and controlled component ablations. These are not presented as completed
 | [`data/hypotheses/`](data/hypotheses/) | Saved model RTTMs; no audio |
 | [`data/runs/results/`](data/runs/results/) | Per-recording scores, bootstrap statistics and uncertainty |
 | [`data/runs/timing/`](data/runs/timing/) | Timing evidence and panel summaries |
-| [`docs/main.md`](docs/main.md) | Final benchmark methodology, measured findings and reflections |
+| [`submission/Ayush_Kumar_Q1_Main.pdf`](submission/Ayush_Kumar_Q1_Main.pdf) | Final benchmark methodology, measured findings and reflections |
 | [`docs/assets/`](docs/assets/) | Report graphs and product screenshots used here |
 | [`submission/`](submission/) | Main PDF, one-page PDF, sketch PDF and audio-free HTML design only |
 | [`third_party/dscore/`](third_party/dscore/) | Independent reference scorer with its original license |
 
-Planning and research notes in the repository root record design history. The final report and saved
-result JSON are the current evidence; a planned experiment is not a measured outcome.
+The final report and saved result JSON are the current evidence; a planned experiment is not a
+measured outcome. Local planning notes and report-source Markdown are not published.
 
 ## Run locally: scoring and analysis
 
@@ -149,9 +149,9 @@ Published scores are saved evidence. Use a separate clone or experiment branch w
 results: these scripts write to the canonical result paths. Exact historical inference cannot be
 guaranteed because complete immutable checkpoint/environment locks were not captured.
 
-Report PDF builders additionally use Google Chrome and macOS fonts in the original environment.
-The committed PDFs are ready to read. Rebuilding the full private listening demo or audio-inspector
-PDF page requires the separately obtained canonical audio.
+The committed PDFs are ready to read. Report PDF builders require the unpublished local report
+sources, Google Chrome and macOS fonts from the original environment. Rebuilding the full private
+listening demo or audio-inspector PDF page also requires the separately obtained canonical audio.
 
 ## Run inference on Kaggle GPU
 
@@ -161,8 +161,16 @@ You do not need a local GPU.
 ### 1. Prepare your input
 
 Obtain the recordings listed in [`harness/manifest.json`](harness/manifest.json) from the original
-datasets. Use the optional [data-preparation workflow](docs/DATA.md) or supply permitted 16 kHz mono
-WAVs named by manifest ID. Create your own private Kaggle input dataset and attach it to the notebook.
+datasets. Supply permitted 16 kHz mono WAVs named by manifest ID, or use the optional extractor:
+
+```bash
+python -m pip install -r requirements-data.txt
+python scripts/extract_audio.py
+```
+
+The extractor writes to ignored `data/audio/`, selects manifest excerpts and updates checksums over
+decoded PCM bytes. Review manifest changes before publishing results; source hosting paths may change.
+Create your own private Kaggle input dataset and attach it to the notebook.
 **The author's private audio dataset is not shared through this repository.**
 
 ### 2. Import and configure the notebook
@@ -221,7 +229,8 @@ python scripts/t09/merge_output.py --zip /path/to/diarizbench_output.zip
 python scripts/t09/score.py --system community-1
 ```
 
-Full optional CLI orchestration is in [`scripts/t09/README.md`](scripts/t09/README.md).
+Optional batch orchestration is in [`scripts/t09/orchestrate.py`](scripts/t09/orchestrate.py);
+use `--help` for its CLI options.
 [Kaggle notebook documentation](https://www.kaggle.com/docs/notebooks) covers account/setup details.
 
 ## Datasets
@@ -233,7 +242,9 @@ Full optional CLI orchestration is in [`scripts/t09/README.md`](scripts/t09/READ
 | VoxConverse | Six English-tagged development recordings | [Official project](https://github.com/joonson/voxconverse) |
 
 Audio is excluded from Git and must be obtained under the original dataset terms. Reference
-annotations retain their source terms and attribution; see [data documentation](docs/DATA.md).
+annotations retain their source terms and attribution. The manifest records source IDs, scoring
+regions and canonical decoded-PCM checksums. Indic DiarBench and AMI use CC BY 4.0; consult
+VoxConverse's source project for its access and usage terms.
 Model licenses also differ: Anuvani/DiariZen weights have non-commercial terms. This repository's
 public availability does not remove dataset or checkpoint restrictions.
 
