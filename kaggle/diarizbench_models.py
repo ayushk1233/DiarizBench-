@@ -54,10 +54,8 @@ def install_deps(hf_token=""):
     os.environ["HF_TOKEN"] = hf_token
     sh(["rm", "-rf", f"{SP}/numpy", f"{SP}/numpy-2.1.3.dist-info",
         f"{SP}/numpy-2.5.4.dist-info", f"{SP}/numpy.libs"])
-    # NumPy must be >=2.0 (fixes Kaggle's broken 2.1.3/2.5.4 mix) but <2.3:
-    # Nemotron's librosa->numba requires NumPy <=2.2.
     sh([sys.executable, "-m", "pip", "install", "-q", "--ignore-installed",
-        "--prefer-binary", "numpy>=2.0,<2.3"])
+        "--prefer-binary", "numpy>=2.3", "numba>=0.60"])
     sh([sys.executable, "-m", "pip", "install", "-q", "--prefer-binary",
         "pyannote.audio>=4.0.1", "torch<2.15", "torchvision<0.27",
         "transformers", "soundfile", "huggingface_hub"])
