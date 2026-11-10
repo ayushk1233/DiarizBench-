@@ -52,10 +52,11 @@ def get_token():
 def install_deps(hf_token=""):
     """One-time environment fix + all dependencies for the three systems."""
     os.environ["HF_TOKEN"] = hf_token
-    sh(["rm", "-rf", f"{SP}/numpy", f"{SP}/numpy-2.1.3.dist-info",
-        f"{SP}/numpy-2.5.4.dist-info", f"{SP}/numpy.libs"])
+    # purge every trace of the broken base numpy (2.1.3/2.5.4 mix)
+    sh(["bash", "-c", f"rm -rf {SP}/numpy {SP}/numpy-*.dist-info {SP}/numpy.libs 2>/dev/null; true"])
+    # numpy 2.5 + numba 0.67+ resolved together (numba 0.67 is the first to support numpy 2.5)
     sh([sys.executable, "-m", "pip", "install", "-q", "--ignore-installed",
-        "--prefer-binary", "numpy>=2.3", "numba>=0.60"])
+        "--prefer-binary", "numpy>=2.5,<2.6", "numba>=0.67"])
     sh([sys.executable, "-m", "pip", "install", "-q", "--prefer-binary",
         "pyannote.audio>=4.0.1", "torch<2.15", "torchvision<0.27",
         "transformers", "soundfile", "huggingface_hub"])
@@ -63,6 +64,9 @@ def install_deps(hf_token=""):
     wheel = hf_hub_download("CIIL/Anuvani-Diarization",
                             "wheels/anuvani_diar-1.0.0-cp310-abi3-manylinux_2_28_x86_64.whl")
     sh([sys.executable, "-m", "pip", "install", "-q", wheel])
+    # safety net: re-assert numpy 2.5.x in case an intermediate install drifted it down
+    sh([sys.executable, "-m", "pip", "install", "-q", "--force-reinstall", "--no-deps",
+        "numpy>=2.5,<2.6"])
     print("deps installed", flush=True)
 
 
