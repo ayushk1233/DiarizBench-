@@ -34,7 +34,7 @@ RECORDINGS = {  # audio filename id -> RTTM file_id (manifest recording_id)
 }
 # audio durations (seconds) for RTF on the timing panel — from the manifest scoring region.
 DURATIONS = {
-    "HI-01": 196.6, "TE-02": 300.0, "AMI-01": 1253.0, "AMI-04": 1494.0,
+    "HI-01": 196.6, "TE-02": 300.0, "AMI-01": 1049.4, "AMI-04": 1505.6,
     "VC-01": 300.0, "VC-03": 300.0,
 }
 OUT = "/kaggle/working/output"
