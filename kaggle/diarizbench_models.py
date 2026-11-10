@@ -66,6 +66,26 @@ def install_deps(hf_token=""):
     print("deps installed", flush=True)
 
 
+def report_versions():
+    """Print the versions of the key installed dependencies (for debugging)."""
+    import importlib
+    print("=== environment ===", flush=True)
+    print("python", sys.version.split()[0], flush=True)
+    try:
+        import torch
+        print("torch", torch.__version__, "| cuda available:", torch.cuda.is_available(), flush=True)
+    except Exception as e:
+        print("torch NOT IMPORTABLE:", e, flush=True)
+    for pkg in ["numpy", "numba", "transformers", "soundfile", "librosa",
+                "torchvision", "huggingface_hub", "pyannote.audio", "anuvani_diar"]:
+        try:
+            m = importlib.import_module(pkg)
+            print(f"{pkg:>16} {getattr(m, '__version__', 'unknown')}", flush=True)
+        except Exception as e:
+            print(f"{pkg:>16} NOT INSTALLED ({type(e).__name__})", flush=True)
+    print("=== /environment ===", flush=True)
+
+
 def _gpu_device():
     import torch
     return torch.device("cuda" if torch.cuda.is_available() else "cpu")
