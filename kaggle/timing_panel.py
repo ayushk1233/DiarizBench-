@@ -52,6 +52,7 @@ def main():
     all_summary = {"n_reps": N_REPS, "systems": {}}
     for system in SYSTEMS:
         print(f"\n===== {system} =====", flush=True)
+        load_s = None
         try:
             t0 = time.time()
             run = LOADERS[system](tok)

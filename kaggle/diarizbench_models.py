@@ -21,9 +21,19 @@ def audio_dir():
     under /kaggle/input/ that contains .wav files.
     """
     import glob
+    import json
+    override = os.environ.get("DIARIZBENCH_AUDIO_DIR")
+    if override:
+        return override
     hits = glob.glob("/kaggle/input/**/*.wav", recursive=True)
     if hits:
-        return os.path.dirname(hits[0])
+        manifest_path = os.path.join(os.path.dirname(__file__), "..", "harness", "manifest.json")
+        expected = set()
+        if os.path.isfile(manifest_path):
+            with open(manifest_path) as f:
+                expected = {r["id"] + ".wav" for r in json.load(f)["recordings"]}
+        folders = {os.path.dirname(p) for p in hits}
+        return max(sorted(folders), key=lambda p: len(set(os.listdir(p)) & expected))
     return "/kaggle/input/diarizbench-pilot-audio"
 
 

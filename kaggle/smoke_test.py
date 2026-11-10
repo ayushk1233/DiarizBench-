@@ -30,7 +30,7 @@ def main():
     print("audio files present:", sorted(os.listdir(AUDIO_DIR))[:5], "...", flush=True)
 
     tok = get_token()
-    print("HF token:", ("set (%s...)" % tok[:6]) if tok else "NOT SET (community-1 will fail)", flush=True)
+    print("HF token:", "SET (value hidden)" if tok else "NOT SET (community-1 will fail)", flush=True)
 
     install_deps(tok)
 

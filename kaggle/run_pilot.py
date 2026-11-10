@@ -31,20 +31,44 @@ RECORDINGS = {  # audio filename id -> RTTM file_id (manifest recording_id)
 OUT = "/kaggle/working/output"
 
 
+def completed(folder, rid):
+    """A checkpoint requires successful metadata and non-empty hypothesis output."""
+    rttm, meta = os.path.join(folder, rid + ".rttm"), os.path.join(folder, rid + ".json")
+    if not os.path.isfile(rttm) or os.path.getsize(rttm) == 0:
+        return False
+    try:
+        with open(meta) as f:
+            metadata = json.load(f)
+            return isinstance(metadata, dict) and metadata.get("status") == "ok"
+    except (OSError, ValueError):
+        return False
+
+
 def main():
     AUDIO_DIR = audio_dir()
     if not os.path.isdir(AUDIO_DIR):
-        print(f"!! audio dataset not mounted. Add 'ayuwat/diarizbench-pilot-audio' as a data input, SAVE the notebook, then re-run.")
-        return
+        raise FileNotFoundError("Mount your own canonical audio dataset or set DIARIZBENCH_AUDIO_DIR.")
+    missing = [rid for rid in RECORDINGS if not os.path.isfile(os.path.join(AUDIO_DIR, rid + ".wav"))]
+    if missing:
+        raise FileNotFoundError(f"Missing canonical WAV files: {', '.join(missing)}")
     os.makedirs(OUT, exist_ok=True)
     tok = get_token()
     install_deps(tok)
 
-    summary = {}
+    summary_path = os.path.join(OUT, "summary.json")
+    try:
+        with open(summary_path) as f:
+            summary = json.load(f)
+    except (OSError, ValueError):
+        summary = {}
     for system in SYSTEMS:
         sys_out = os.path.join(OUT, system)
         os.makedirs(sys_out, exist_ok=True)
-        done = {os.path.basename(f)[:-5] for f in glob.glob(f"{sys_out}/*.rttm")}
+        done = {rid for rid in RECORDINGS if completed(sys_out, rid)}
+        summary.setdefault(system, {"jobs": {}}).setdefault("jobs", {})
+        for rid in done:
+            with open(os.path.join(sys_out, rid + ".json")) as f:
+                summary[system]["jobs"][rid] = json.load(f)
         todo = [rid for rid in RECORDINGS if rid not in done]
         print(f"\n===== {system}: {len(done)} done, {len(todo)} to run =====", flush=True)
         if not todo:
@@ -52,10 +76,11 @@ def main():
         try:
             t0 = time.time()
             run = LOADERS[system](tok)
-            summary[system] = {"load_s": round(time.time() - t0, 2), "jobs": {}}
+            summary[system]["load_s"] = round(time.time() - t0, 2)
+            summary[system].pop("error", None)
             print(f"[{system}] loaded in {summary[system]['load_s']}s", flush=True)
         except Exception as e:
-            summary[system] = {"error": f"{type(e).__name__}: {str(e)[:500]}"}
+            summary[system]["error"] = f"{type(e).__name__}: {str(e)[:500]}"
             print(f"[{system}] LOAD ERROR {summary[system]['error']}", flush=True)
             traceback.print_exc()
             continue

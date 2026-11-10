@@ -1,0 +1,650 @@
+{
+ "per_recording": [
+  {
+   "der": 0.14041370343594625,
+   "jer": 0.52136331428733,
+   "components": {
+    "missed": 0.03558118551645628,
+    "false_alarm": 0.011662379439241961,
+    "confusion": 0.09317013848024801,
+    "total": 178.43699999999995
+   },
+   "overlap_der": 0.9406644940783728,
+   "ref_speaker_count": 9,
+   "hyp_speaker_count": 8,
+   "low_activity": {
+    "n_low": 5,
+    "n_recovered": 1,
+    "recall": 0.2,
+    "speakers": [
+     "SPEAKER_03",
+     "SPEAKER_07",
+     "SPEAKER_08",
+     "SPEAKER_01",
+     "SPEAKER_06"
+    ],
+    "recovered": [
+     true,
+     false,
+     false,
+     false,
+     false
+    ]
+   },
+   "id": "HI-01",
+   "ref_speaker_count_true": 9
+  },
+  {
+   "der": 0.01773508152506136,
+   "jer": 0.019360335632579644,
+   "components": {
+    "missed": 0.005749915714830828,
+    "false_alarm": 0.011310884457073865,
+    "confusion": 0.0006742813531566666,
+    "total": 269.917
+   },
+   "overlap_der": 0.9195094446010765,
+   "ref_speaker_count": 5,
+   "hyp_speaker_count": 4,
+   "low_activity": {
+    "n_low": 0,
+    "n_recovered": 0,
+    "recall": null,
+    "speakers": [],
+    "recovered": []
+   },
+   "id": "HI-02",
+   "ref_speaker_count_true": 5
+  },
+  {
+   "der": 0.16859508180660374,
+   "jer": 0.46959466139762046,
+   "components": {
+    "missed": 0.06784069756049768,
+    "false_alarm": 0.02510042127951482,
+    "confusion": 0.07565396296659122,
+    "total": 204.13999999999984
+   },
+   "overlap_der": 0.6456730610492964,
+   "ref_speaker_count": 8,
+   "hyp_speaker_count": 6,
+   "low_activity": {
+    "n_low": 1,
+    "n_recovered": 0,
+    "recall": 0.0,
+    "speakers": [
+     "SPEAKER_05"
+    ],
+    "recovered": [
+     false
+    ]
+   },
+   "id": "BN-01",
+   "ref_speaker_count_true": 8
+  },
+  {
+   "der": 0.07629641347177044,
+   "jer": 0.07552744185069814,
+   "components": {
+    "missed": 0.025331473438982625,
+    "false_alarm": 0.03565316805200022,
+    "confusion": 0.01531177198078759,
+    "total": 278.15199999999993
+   },
+   "overlap_der": 0.5665722379603406,
+   "ref_speaker_count": 6,
+   "hyp_speaker_count": 6,
+   "low_activity": {
+    "n_low": 0,
+    "n_recovered": 0,
+    "recall": null,
+    "speakers": [],
+    "recovered": []
+   },
+   "id": "BN-02",
+   "ref_speaker_count_true": 6
+  },
+  {
+   "der": 0.181158613936305,
+   "jer": 0.5921892172590026,
+   "components": {
+    "missed": 0.0761912180357423,
+    "false_alarm": 0.01186210580197184,
+    "confusion": 0.09310529009859086,
+    "total": 179.73199999999974
+   },
+   "overlap_der": 1.0597297214850065,
+   "ref_speaker_count": 6,
+   "hyp_speaker_count": 4,
+   "low_activity": {
+    "n_low": 2,
+    "n_recovered": 0,
+    "recall": 0.0,
+    "speakers": [
+     "SPEAKER_04",
+     "SPEAKER_06"
+    ],
+    "recovered": [
+     false,
+     false
+    ]
+   },
+   "id": "MR-01",
+   "ref_speaker_count_true": 6
+  },
+  {
+   "der": 0.022203415512086454,
+   "jer": 0.24333766064880596,
+   "components": {
+    "missed": 0.004601073953486464,
+    "false_alarm": 0.0028493397736049928,
+    "confusion": 0.014753001784994996,
+    "total": 270.58899999999977
+   },
+   "overlap_der": 0.897974838907651,
+   "ref_speaker_count": 5,
+   "hyp_speaker_count": 4,
+   "low_activity": {
+    "n_low": 2,
+    "n_recovered": 1,
+    "recall": 0.5,
+    "speakers": [
+     "New_speaker_A",
+     "Speaker_C"
+    ],
+    "recovered": [
+     false,
+     true
+    ]
+   },
+   "id": "MR-02",
+   "ref_speaker_count_true": 5
+  },
+  {
+   "der": 0.06095509804339036,
+   "jer": 0.4218646760831408,
+   "components": {
+    "missed": 0.040991576004030965,
+    "false_alarm": 0.0026116516567665665,
+    "confusion": 0.01735187038259283,
+    "total": 140.90699999999995
+   },
+   "overlap_der": 0.8485120651457978,
+   "ref_speaker_count": 5,
+   "hyp_speaker_count": 4,
+   "low_activity": {
+    "n_low": 2,
+    "n_recovered": 0,
+    "recall": 0.0,
+    "speakers": [
+     "SPEAKER_02",
+     "SPEAKER_03"
+    ],
+    "recovered": [
+     false,
+     false
+    ]
+   },
+   "id": "TA-01",
+   "ref_speaker_count_true": 5
+  },
+  {
+   "der": 0.037567952132511226,
+   "jer": 0.07400149308567844,
+   "components": {
+    "missed": 0.0028895618227589032,
+    "false_alarm": 0.010011310153599252,
+    "confusion": 0.02466708015615307,
+    "total": 274.08999999999986
+   },
+   "overlap_der": 0.8498322147651033,
+   "ref_speaker_count": 3,
+   "hyp_speaker_count": 3,
+   "low_activity": {
+    "n_low": 0,
+    "n_recovered": 0,
+    "recall": null,
+    "speakers": [],
+    "recovered": []
+   },
+   "id": "TA-02",
+   "ref_speaker_count_true": 6
+  },
+  {
+   "der": 0.2856310631680287,
+   "jer": 0.5415251986133784,
+   "components": {
+    "missed": 0.20461603021401642,
+    "false_alarm": 0.008713682703463213,
+    "confusion": 0.07230135025054907,
+    "total": 202.55500000000006
+   },
+   "overlap_der": 0.8352556777603194,
+   "ref_speaker_count": 8,
+   "hyp_speaker_count": 7,
+   "low_activity": {
+    "n_low": 3,
+    "n_recovered": 0,
+    "recall": 0.0,
+    "speakers": [
+     "SPEAKER_08",
+     "SPEAKER_06",
+     "SPEAKER_05"
+    ],
+    "recovered": [
+     false,
+     false,
+     false
+    ]
+   },
+   "id": "TE-01",
+   "ref_speaker_count_true": 8
+  },
+  {
+   "der": 0.34052164227591947,
+   "jer": 0.4399802746759108,
+   "components": {
+    "missed": 0.14492813409926167,
+    "false_alarm": 0.042844521449762384,
+    "confusion": 0.15274898672689538,
+    "total": 290.88899999999967
+   },
+   "overlap_der": 0.8976386019430747,
+   "ref_speaker_count": 8,
+   "hyp_speaker_count": 9,
+   "low_activity": {
+    "n_low": 1,
+    "n_recovered": 0,
+    "recall": 0.0,
+    "speakers": [
+     "New_speaker_A"
+    ],
+    "recovered": [
+     false
+    ]
+   },
+   "id": "TE-02",
+   "ref_speaker_count_true": 8
+  },
+  {
+   "der": 0.11246378698610078,
+   "jer": 0.5020904703949639,
+   "components": {
+    "missed": 0.03267580265399336,
+    "false_alarm": 0.015087399498714299,
+    "confusion": 0.06470058483339312,
+    "total": 184.32600000000005
+   },
+   "overlap_der": 0.8412874049841222,
+   "ref_speaker_count": 7,
+   "hyp_speaker_count": 4,
+   "low_activity": {
+    "n_low": 0,
+    "n_recovered": 0,
+    "recall": null,
+    "speakers": [],
+    "recovered": []
+   },
+   "id": "KN-01",
+   "ref_speaker_count_true": 7
+  },
+  {
+   "der": 0.021534704996065444,
+   "jer": 0.03413911208221133,
+   "components": {
+    "missed": 0.004209553180453201,
+    "false_alarm": 0.009061301397656195,
+    "confusion": 0.008263850417956051,
+    "total": 283.403
+   },
+   "overlap_der": 0.0,
+   "ref_speaker_count": 7,
+   "hyp_speaker_count": 7,
+   "low_activity": {
+    "n_low": 0,
+    "n_recovered": 0,
+    "recall": null,
+    "speakers": [],
+    "recovered": []
+   },
+   "id": "KN-02",
+   "ref_speaker_count_true": 8
+  },
+  {
+   "der": 0.14027740180723652,
+   "jer": 0.1791353250674781,
+   "components": {
+    "missed": 0.10992820036866571,
+    "false_alarm": 0.018371424520154316,
+    "confusion": 0.01197777691841651,
+    "total": 775.7699999999998
+   },
+   "overlap_der": 0.7677339624761302,
+   "ref_speaker_count": 4,
+   "hyp_speaker_count": 4,
+   "low_activity": {
+    "n_low": 0,
+    "n_recovered": 0,
+    "recall": null,
+    "speakers": [],
+    "recovered": []
+   },
+   "id": "AMI-01",
+   "ref_speaker_count_true": 4
+  },
+  {
+   "der": 0.1597189297372921,
+   "jer": 0.1944503909453233,
+   "components": {
+    "missed": 0.10553056505518413,
+    "false_alarm": 0.020301570029535452,
+    "confusion": 0.033886794652572536,
+    "total": 2058.559999999997
+   },
+   "overlap_der": 0.8396989795918435,
+   "ref_speaker_count": 4,
+   "hyp_speaker_count": 4,
+   "low_activity": {
+    "n_low": 0,
+    "n_recovered": 0,
+    "recall": null,
+    "speakers": [],
+    "recovered": []
+   },
+   "id": "AMI-02",
+   "ref_speaker_count_true": 4
+  },
+  {
+   "der": 0.13607231730232078,
+   "jer": 0.23291391897109548,
+   "components": {
+    "missed": 0.06264452457129267,
+    "false_alarm": 0.05651482064564178,
+    "confusion": 0.016912972085386332,
+    "total": 590.7300000000001
+   },
+   "overlap_der": 0.6486092493297594,
+   "ref_speaker_count": 4,
+   "hyp_speaker_count": 5,
+   "low_activity": {
+    "n_low": 0,
+    "n_recovered": 0,
+    "recall": null,
+    "speakers": [],
+    "recovered": []
+   },
+   "id": "AMI-03",
+   "ref_speaker_count_true": 4
+  },
+  {
+   "der": 0.15516928716535028,
+   "jer": 0.5194742068564323,
+   "components": {
+    "missed": 0.11385514467613915,
+    "false_alarm": 0.025095691559065568,
+    "confusion": 0.016218450930145543,
+    "total": 926.4140000000007
+   },
+   "overlap_der": 0.6547514910536801,
+   "ref_speaker_count": 4,
+   "hyp_speaker_count": 3,
+   "low_activity": {
+    "n_low": 2,
+    "n_recovered": 0,
+    "recall": 0.0,
+    "speakers": [
+     "MTD011UID",
+     "MTD0010ID"
+    ],
+    "recovered": [
+     false,
+     false
+    ]
+   },
+   "id": "AMI-04",
+   "ref_speaker_count_true": 4
+  },
+  {
+   "der": 0.1633084969541053,
+   "jer": 0.3786828350879135,
+   "components": {
+    "missed": 0.11279518481663967,
+    "false_alarm": 0.01681916365313243,
+    "confusion": 0.03369414848433319,
+    "total": 824.06
+   },
+   "overlap_der": 0.7364791901012351,
+   "ref_speaker_count": 4,
+   "hyp_speaker_count": 3,
+   "low_activity": {
+    "n_low": 1,
+    "n_recovered": 0,
+    "recall": 0.0,
+    "speakers": [
+     "FEE042"
+    ],
+    "recovered": [
+     false
+    ]
+   },
+   "id": "AMI-05",
+   "ref_speaker_count_true": 4
+  },
+  {
+   "der": 0.05512054082744322,
+   "jer": 0.060956647208529786,
+   "components": {
+    "missed": 0.0260929686845269,
+    "false_alarm": 0.02388747660418417,
+    "confusion": 0.005140095538732147,
+    "total": 715.9399999999999
+   },
+   "overlap_der": 0.6590707964601734,
+   "ref_speaker_count": 4,
+   "hyp_speaker_count": 5,
+   "low_activity": {
+    "n_low": 0,
+    "n_recovered": 0,
+    "recall": null,
+    "speakers": [],
+    "recovered": []
+   },
+   "id": "AMI-06",
+   "ref_speaker_count_true": 4
+  },
+  {
+   "der": 0.10874890638670114,
+   "jer": 0.15494820421530517,
+   "components": {
+    "missed": 0.008143482064741699,
+    "false_alarm": 0.023930008748906106,
+    "confusion": 0.07667541557305332,
+    "total": 285.7500000000001
+   },
+   "overlap_der": 0.39785310734463314,
+   "ref_speaker_count": 13,
+   "hyp_speaker_count": 13,
+   "low_activity": {
+    "n_low": 6,
+    "n_recovered": 6,
+    "recall": 1.0,
+    "speakers": [
+     "spk09",
+     "spk06",
+     "spk04",
+     "spk12",
+     "spk07",
+     "spk05"
+    ],
+    "recovered": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "id": "VC-01",
+   "ref_speaker_count_true": 15
+  },
+  {
+   "der": 0.015127008812856434,
+   "jer": 0.021432893854197707,
+   "components": {
+    "missed": 0.006977708657335327,
+    "false_alarm": 0.008149300155521106,
+    "confusion": 0.0,
+    "total": 289.35
+   },
+   "overlap_der": 0.8014038876889928,
+   "ref_speaker_count": 8,
+   "hyp_speaker_count": 8,
+   "low_activity": {
+    "n_low": 3,
+    "n_recovered": 3,
+    "recall": 1.0,
+    "speakers": [
+     "spk06",
+     "spk05",
+     "spk08"
+    ],
+    "recovered": [
+     true,
+     true,
+     true
+    ]
+   },
+   "id": "VC-02",
+   "ref_speaker_count_true": 9
+  },
+  {
+   "der": 0.024761868905538234,
+   "jer": 0.06996956483327463,
+   "components": {
+    "missed": 0.00015812657655962347,
+    "false_alarm": 0.02460374232897861,
+    "confusion": 0.0,
+    "total": 265.61
+   },
+   "overlap_der": 0.0,
+   "ref_speaker_count": 8,
+   "hyp_speaker_count": 8,
+   "low_activity": {
+    "n_low": 6,
+    "n_recovered": 6,
+    "recall": 1.0,
+    "speakers": [
+     "spk07",
+     "spk03",
+     "spk04",
+     "spk01",
+     "spk02",
+     "spk06"
+    ],
+    "recovered": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "id": "VC-03",
+   "ref_speaker_count_true": 8
+  },
+  {
+   "der": 0.025914059555220314,
+   "jer": 0.16580719754441606,
+   "components": {
+    "missed": 0.0020856891569290665,
+    "false_alarm": 0.00862545545922856,
+    "confusion": 0.015202914939062687,
+    "total": 159.17999999999998
+   },
+   "overlap_der": 0.8916500994035788,
+   "ref_speaker_count": 8,
+   "hyp_speaker_count": 7,
+   "low_activity": {
+    "n_low": 2,
+    "n_recovered": 1,
+    "recall": 0.5,
+    "speakers": [
+     "spk02",
+     "spk01"
+    ],
+    "recovered": [
+     true,
+     false
+    ]
+   },
+   "id": "VC-04",
+   "ref_speaker_count_true": 8
+  },
+  {
+   "der": 0.0072801603836629095,
+   "jer": 0.1718242119508203,
+   "components": {
+    "missed": 0.0,
+    "false_alarm": 0.005432603482841341,
+    "confusion": 0.0018475569008215688,
+    "total": 254.39
+   },
+   "overlap_der": 0.0,
+   "ref_speaker_count": 6,
+   "hyp_speaker_count": 5,
+   "low_activity": {
+    "n_low": 1,
+    "n_recovered": 0,
+    "recall": 0.0,
+    "speakers": [
+     "spk06"
+    ],
+    "recovered": [
+     false
+    ]
+   },
+   "id": "VC-05",
+   "ref_speaker_count_true": 7
+  },
+  {
+   "der": 0.015589547916737835,
+   "jer": 0.19180534440501043,
+   "components": {
+    "missed": 0.004711613804381211,
+    "false_alarm": 3.4068068000994665e-06,
+    "confusion": 0.010874527305556526,
+    "total": 293.53000000000003
+   },
+   "overlap_der": null,
+   "ref_speaker_count": 6,
+   "hyp_speaker_count": 5,
+   "low_activity": {
+    "n_low": 1,
+    "n_recovered": 0,
+    "recall": 0.0,
+    "speakers": [
+     "spk05"
+    ],
+    "recovered": [
+     false
+    ]
+   },
+   "id": "VC-06",
+   "ref_speaker_count_true": 7
+  }
+ ],
+ "aggregate": {
+  "n_recordings": 24,
+  "counts": {
+   "exact_count_accuracy": 0.3333333333333333,
+   "count_mae": 0.8333333333333334,
+   "count_bias": -0.5833333333333334
+  },
+  "der": 0.1030068784601773,
+  "jer": 0.26151560820629655,
+  "low_activity_recall": 0.47368421052631576,
+  "low_activity_n": 38
+ }
+}

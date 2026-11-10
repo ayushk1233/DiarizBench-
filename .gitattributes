@@ -1,0 +1,11 @@
+*.pdf binary
+*.png binary
+*.md text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.ipynb text eol=lf
+# Preserve the reference scorer exactly as vendored, including its line endings.
+third_party/dscore/** -text whitespace=-trailing-space,-space-before-tab

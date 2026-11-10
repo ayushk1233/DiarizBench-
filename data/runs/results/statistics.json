@@ -1,0 +1,138 @@
+{
+ "seed": 20261111,
+ "n_boot": 10000,
+ "practical_pp": 1.0,
+ "n_recordings": 24,
+ "pooling": {
+  "community-1": {
+   "der_global": 20.384967808298708,
+   "der_corpus_equal": 18.49367305657346,
+   "per_corpus": {
+    "indic-diarbench": 26.058852063474443,
+    "ami": 22.66532705187191,
+    "voxconverse": 6.756840054374035
+   },
+   "per_language": {
+    "Bengali": 26.33034703272373,
+    "Hindi": 19.543924306658994,
+    "Kannada": 20.733217745948,
+    "Marathi": 21.466807663912334,
+    "Tamil": 25.122608452419826,
+    "Telugu": 43.1562071791838
+   },
+   "per_condition": {
+    "near_field": 32.8378757631718,
+    "in_the_wild": 13.018334209075567
+   }
+  },
+  "nemotron": {
+   "der_global": 21.582301005176024,
+   "der_corpus_equal": 20.4130204511093,
+   "per_corpus": {
+    "indic-diarbench": 25.09014266737621,
+    "ami": 29.631333030318814,
+    "voxconverse": 6.517585655632868
+   },
+   "per_language": {
+    "Bengali": 19.388513913411437,
+    "Hindi": 14.376373771833403,
+    "Kannada": 31.863276537130858,
+    "Marathi": 17.984402047656836,
+    "Tamil": 16.86821654231897,
+    "Telugu": 50.060073191905744
+   },
+   "per_condition": {
+    "near_field": 31.26156322956973,
+    "in_the_wild": 12.718153880407778
+   }
+  },
+  "anuvani": {
+   "der_global": 13.80548908053251,
+   "der_corpus_equal": 12.923868369800052,
+   "per_corpus": {
+    "indic-diarbench": 16.450351212729892,
+    "ami": 17.45221028824776,
+    "voxconverse": 4.869043608422502
+   },
+   "per_language": {
+    "Bengali": 16.417702524948954,
+    "Hindi": 13.271657634115648,
+    "Kannada": 10.09605358759445,
+    "Marathi": 15.084235004189583,
+    "Tamil": 7.763471370931461,
+    "Telugu": 36.068987154599256
+   },
+   "per_condition": {
+    "near_field": 21.494315197537812,
+    "in_the_wild": 8.137715418172238
+   }
+  }
+ },
+ "intervals": {
+  "community-1": {
+   "der_global_95ci": [
+    15.477459433358229,
+    25.333593207999822
+   ]
+  },
+  "nemotron": {
+   "der_global_95ci": [
+    15.682567365091279,
+    27.646150450389417
+   ]
+  },
+  "anuvani": {
+   "der_global_95ci": [
+    9.99308838237802,
+    17.946923347260046
+   ]
+  }
+ },
+ "pairwise": {
+  "community-1__vs__nemotron": {
+   "mean_diff_pp": -1.197333196877316,
+   "ci95": [
+    -4.246670042716714,
+    1.9629162579635688
+   ],
+   "ci_bonferroni": [
+    -4.97102594389857,
+    2.62721271275393
+   ],
+   "significant_95": false,
+   "significant_bonferroni": false,
+   "practically_meaningful": true,
+   "winner": null
+  },
+  "community-1__vs__anuvani": {
+   "mean_diff_pp": 6.579478727766198,
+   "ci95": [
+    4.350219336475184,
+    9.133036242063648
+   ],
+   "ci_bonferroni": [
+    3.921070337855494,
+    9.743179840516087
+   ],
+   "significant_95": true,
+   "significant_bonferroni": true,
+   "practically_meaningful": true,
+   "winner": "anuvani"
+  },
+  "nemotron__vs__anuvani": {
+   "mean_diff_pp": 7.776811924643515,
+   "ci95": [
+    4.598319369625501,
+    11.14044754584455
+   ],
+   "ci_bonferroni": [
+    4.014442696607172,
+    12.01570775881326
+   ],
+   "significant_95": true,
+   "significant_bonferroni": true,
+   "practically_meaningful": true,
+   "winner": "anuvani"
+  }
+ }
+}

@@ -1,0 +1,263 @@
+{
+ "seed": 20261111,
+ "n_boot": 10000,
+ "count_accuracy": {
+  "community-1": {
+   "k": 9,
+   "n": 24,
+   "pct": 37.5,
+   "wilson95": [
+    21.159367559548777,
+    57.290037557325725
+   ]
+  },
+  "nemotron": {
+   "k": 14,
+   "n": 24,
+   "pct": 58.333333333333336,
+   "wilson95": [
+    38.834665865228764,
+    75.53239739018824
+   ]
+  },
+  "anuvani": {
+   "k": 8,
+   "n": 24,
+   "pct": 33.333333333333336,
+   "wilson95": [
+    17.97219032729775,
+    53.293683161868245
+   ]
+  }
+ },
+ "low_activity_recall": {
+  "community-1": {
+   "n_recovered": 17,
+   "n_low": 38,
+   "pct": 44.73684210526316,
+   "clustered_bootstrap95": [
+    12.5,
+    69.04870129870129
+   ]
+  },
+  "nemotron": {
+   "n_recovered": 23,
+   "n_low": 38,
+   "pct": 60.526315789473685,
+   "clustered_bootstrap95": [
+    35.13513513513514,
+    81.25
+   ]
+  },
+  "anuvani": {
+   "n_recovered": 18,
+   "n_low": 38,
+   "pct": 47.36842105263158,
+   "clustered_bootstrap95": [
+    13.793103448275861,
+    72.5
+   ]
+  }
+ },
+ "low_activity_sensitivity": {
+  "community-1": {
+   "act0.03_min0.40": {
+    "n_low": 25,
+    "n_recovered": 9,
+    "recall_pct": 36.0
+   },
+   "act0.03_min0.50": {
+    "n_low": 24,
+    "n_recovered": 9,
+    "recall_pct": 37.5
+   },
+   "act0.03_min0.75": {
+    "n_low": 23,
+    "n_recovered": 9,
+    "recall_pct": 39.130434782608695
+   },
+   "act0.05_min0.40": {
+    "n_low": 39,
+    "n_recovered": 17,
+    "recall_pct": 43.58974358974359
+   },
+   "act0.05_min0.50": {
+    "n_low": 38,
+    "n_recovered": 17,
+    "recall_pct": 44.73684210526316
+   },
+   "act0.05_min0.75": {
+    "n_low": 37,
+    "n_recovered": 17,
+    "recall_pct": 45.945945945945944
+   },
+   "act0.10_min0.40": {
+    "n_low": 65,
+    "n_recovered": 34,
+    "recall_pct": 52.30769230769231
+   },
+   "act0.10_min0.50": {
+    "n_low": 64,
+    "n_recovered": 34,
+    "recall_pct": 53.125
+   },
+   "act0.10_min0.75": {
+    "n_low": 63,
+    "n_recovered": 34,
+    "recall_pct": 53.96825396825397
+   }
+  },
+  "nemotron": {
+   "act0.03_min0.40": {
+    "n_low": 25,
+    "n_recovered": 14,
+    "recall_pct": 56.0
+   },
+   "act0.03_min0.50": {
+    "n_low": 24,
+    "n_recovered": 14,
+    "recall_pct": 58.333333333333336
+   },
+   "act0.03_min0.75": {
+    "n_low": 23,
+    "n_recovered": 13,
+    "recall_pct": 56.52173913043478
+   },
+   "act0.05_min0.40": {
+    "n_low": 39,
+    "n_recovered": 23,
+    "recall_pct": 58.97435897435897
+   },
+   "act0.05_min0.50": {
+    "n_low": 38,
+    "n_recovered": 23,
+    "recall_pct": 60.526315789473685
+   },
+   "act0.05_min0.75": {
+    "n_low": 37,
+    "n_recovered": 22,
+    "recall_pct": 59.45945945945946
+   },
+   "act0.10_min0.40": {
+    "n_low": 65,
+    "n_recovered": 40,
+    "recall_pct": 61.53846153846154
+   },
+   "act0.10_min0.50": {
+    "n_low": 64,
+    "n_recovered": 40,
+    "recall_pct": 62.5
+   },
+   "act0.10_min0.75": {
+    "n_low": 63,
+    "n_recovered": 39,
+    "recall_pct": 61.904761904761905
+   }
+  },
+  "anuvani": {
+   "act0.03_min0.40": {
+    "n_low": 25,
+    "n_recovered": 10,
+    "recall_pct": 40.0
+   },
+   "act0.03_min0.50": {
+    "n_low": 24,
+    "n_recovered": 10,
+    "recall_pct": 41.666666666666664
+   },
+   "act0.03_min0.75": {
+    "n_low": 23,
+    "n_recovered": 10,
+    "recall_pct": 43.47826086956522
+   },
+   "act0.05_min0.40": {
+    "n_low": 39,
+    "n_recovered": 18,
+    "recall_pct": 46.15384615384615
+   },
+   "act0.05_min0.50": {
+    "n_low": 38,
+    "n_recovered": 18,
+    "recall_pct": 47.36842105263158
+   },
+   "act0.05_min0.75": {
+    "n_low": 37,
+    "n_recovered": 18,
+    "recall_pct": 48.648648648648646
+   },
+   "act0.10_min0.40": {
+    "n_low": 65,
+    "n_recovered": 34,
+    "recall_pct": 52.30769230769231
+   },
+   "act0.10_min0.50": {
+    "n_low": 64,
+    "n_recovered": 34,
+    "recall_pct": 53.125
+   },
+   "act0.10_min0.75": {
+    "n_low": 63,
+    "n_recovered": 34,
+    "recall_pct": 53.96825396825397
+   }
+  }
+ },
+ "jer_intervals": {
+  "community-1": {
+   "mean": 38.582765873999996,
+   "ci95": [
+    30.281733251278983,
+    47.210905239367655
+   ]
+  },
+  "nemotron": {
+   "mean": 32.52320029691873,
+   "ci95": [
+    23.35370049846865,
+    41.59352115163575
+   ]
+  },
+  "anuvani": {
+   "mean": 29.852242211513694,
+   "ci95": [
+    22.67990905685002,
+    37.37272972717652
+   ]
+  }
+ },
+ "jer_pairwise": {
+  "community-1__vs__nemotron": {
+   "mean_diff_pp": 6.0595655770812655,
+   "ci95": [
+    -0.9630483506292195,
+    12.623245279857496
+   ],
+   "ci_bonferroni": [
+    -2.4442165658766926,
+    14.178525852654996
+   ]
+  },
+  "community-1__vs__anuvani": {
+   "mean_diff_pp": 8.730523662486304,
+   "ci95": [
+    5.324663026279575,
+    13.068473304912564
+   ],
+   "ci_bonferroni": [
+    4.792434118565186,
+    14.331152981674844
+   ]
+  },
+  "nemotron__vs__anuvani": {
+   "mean_diff_pp": 2.670958085405038,
+   "ci95": [
+    -3.6188979867201065,
+    8.965601544919656
+   ],
+   "ci_bonferroni": [
+    -4.723197610034986,
+    10.223249617129873
+   ]
+  }
+ }
+}

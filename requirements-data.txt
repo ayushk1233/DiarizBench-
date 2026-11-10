@@ -1,0 +1,6 @@
+# Optional: fetch/prepare source audio locally. Audio remains ignored by Git.
+-r requirements.txt
+soundfile==0.14.0
+fsspec==2026.9.0
+pyarrow==26.0.1
+huggingface-hub==2.4.0

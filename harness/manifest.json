@@ -1,0 +1,557 @@
+{
+ "comment": "Machine-readable pilot manifest (checksums from Kaggle extraction).",
+ "recordings": [
+  {
+   "id": "HI-01",
+   "corpus": "indic-diarbench",
+   "split": "test",
+   "language": "Hindi",
+   "condition": "near_field",
+   "recording_id": "hindi_nf_001",
+   "sample_id": "hindi_018",
+   "ref_speakers": 9,
+   "duration_s": 196.6,
+   "scoring_region": [
+    0,
+    196.6
+   ],
+   "reference": "annotated_transcript",
+   "checksum": "c1cea023a2c9eddf6e514a8f230cad65c407331c50a0ca2bc59596368d6b3531",
+   "fallback": true,
+   "exposure": {
+    "community-1": "unknown",
+    "nemotron": "unknown",
+    "anuvani": "known_overlap"
+   }
+  },
+  {
+   "id": "HI-02",
+   "corpus": "indic-diarbench",
+   "split": "test",
+   "language": "Hindi",
+   "condition": "in_the_wild",
+   "recording_id": "hindi_itw_004",
+   "sample_id": "hindi_036",
+   "ref_speakers": 5,
+   "duration_s": 310.0,
+   "scoring_region": [
+    0,
+    300.0
+   ],
+   "reference": "annotated_transcript",
+   "checksum": "b1a99f3e5d3ba138df5c7c7748e6f20fca1a20bf160d96a50809396b43820179",
+   "fallback": false,
+   "exposure": {
+    "community-1": "unknown",
+    "nemotron": "unknown",
+    "anuvani": "known_overlap"
+   }
+  },
+  {
+   "id": "BN-01",
+   "corpus": "indic-diarbench",
+   "split": "test",
+   "language": "Bengali",
+   "condition": "near_field",
+   "recording_id": "bengali_nf_001",
+   "sample_id": "bengali_030",
+   "ref_speakers": 8,
+   "duration_s": 206.4,
+   "scoring_region": [
+    0,
+    206.4
+   ],
+   "reference": "annotated_transcript",
+   "checksum": "ef4bfa377d9069fab8df4788dd969130e6b3768a46db85846def97a770a7069a",
+   "fallback": true,
+   "exposure": {
+    "community-1": "unknown",
+    "nemotron": "unknown",
+    "anuvani": "known_overlap"
+   }
+  },
+  {
+   "id": "BN-02",
+   "corpus": "indic-diarbench",
+   "split": "test",
+   "language": "Bengali",
+   "condition": "in_the_wild",
+   "recording_id": "bengali_itw_008",
+   "sample_id": "bengali_040",
+   "ref_speakers": 6,
+   "duration_s": 305.0,
+   "scoring_region": [
+    0,
+    300.0
+   ],
+   "reference": "annotated_transcript",
+   "checksum": "e4f28636604b071a31fb754cedb773416973bfbd5057b9192c53444394720033",
+   "fallback": false,
+   "exposure": {
+    "community-1": "unknown",
+    "nemotron": "unknown",
+    "anuvani": "known_overlap"
+   }
+  },
+  {
+   "id": "MR-01",
+   "corpus": "indic-diarbench",
+   "split": "test",
+   "language": "Marathi",
+   "condition": "near_field",
+   "recording_id": "marathi_nf_002",
+   "sample_id": "marathi_024",
+   "ref_speakers": 6,
+   "duration_s": 178.3,
+   "scoring_region": [
+    0,
+    178.3
+   ],
+   "reference": "annotated_transcript",
+   "checksum": "4afe0b0c9ae1b4b197f791a4539c08a601842595d321ae479a028b8f4086bfe4",
+   "fallback": true,
+   "exposure": {
+    "community-1": "unknown",
+    "nemotron": "unknown",
+    "anuvani": "known_overlap"
+   }
+  },
+  {
+   "id": "MR-02",
+   "corpus": "indic-diarbench",
+   "split": "test",
+   "language": "Marathi",
+   "condition": "in_the_wild",
+   "recording_id": "marathi_itw_008",
+   "sample_id": "marathi_038",
+   "ref_speakers": 5,
+   "duration_s": 397.4,
+   "scoring_region": [
+    0,
+    300.0
+   ],
+   "reference": "annotated_transcript",
+   "checksum": "c477d4372d788a3297c16e05f93f915fabeb24976ec8a8154a2ce9b0cb8fd6ff",
+   "fallback": false,
+   "exposure": {
+    "community-1": "unknown",
+    "nemotron": "unknown",
+    "anuvani": "known_overlap"
+   }
+  },
+  {
+   "id": "TA-01",
+   "corpus": "indic-diarbench",
+   "split": "test",
+   "language": "Tamil",
+   "condition": "near_field",
+   "recording_id": "tamil_nf_001",
+   "sample_id": "tamil_010",
+   "ref_speakers": 5,
+   "duration_s": 144.5,
+   "scoring_region": [
+    0,
+    144.5
+   ],
+   "reference": "annotated_transcript",
+   "checksum": "c3422b21073c4016f3b0e9661b64992af77e6b259b8143e275f4918303ac348d",
+   "fallback": true,
+   "exposure": {
+    "community-1": "unknown",
+    "nemotron": "unknown",
+    "anuvani": "known_overlap"
+   }
+  },
+  {
+   "id": "TA-02",
+   "corpus": "indic-diarbench",
+   "split": "test",
+   "language": "Tamil",
+   "condition": "in_the_wild",
+   "recording_id": "tamil_itw_018",
+   "sample_id": "tamil_049",
+   "ref_speakers": 6,
+   "duration_s": 1422.0,
+   "scoring_region": [
+    0,
+    300.0
+   ],
+   "reference": "annotated_transcript",
+   "checksum": "0d6a369ee7ddebb1aa9c08946bdbb7cd4ecaa1c74afdd4679daaccbef537d0d5",
+   "fallback": false,
+   "exposure": {
+    "community-1": "unknown",
+    "nemotron": "unknown",
+    "anuvani": "known_overlap"
+   }
+  },
+  {
+   "id": "TE-01",
+   "corpus": "indic-diarbench",
+   "split": "test",
+   "language": "Telugu",
+   "condition": "near_field",
+   "recording_id": "telugu_nf_001",
+   "sample_id": "telugu_011",
+   "ref_speakers": 8,
+   "duration_s": 192.4,
+   "scoring_region": [
+    0,
+    192.4
+   ],
+   "reference": "annotated_transcript",
+   "checksum": "39e4475524b8fd405de735bd4debd810f2a05f93f81bede925471bedbdbc30d9",
+   "fallback": true,
+   "exposure": {
+    "community-1": "unknown",
+    "nemotron": "unknown",
+    "anuvani": "known_overlap"
+   }
+  },
+  {
+   "id": "TE-02",
+   "corpus": "indic-diarbench",
+   "split": "test",
+   "language": "Telugu",
+   "condition": "in_the_wild",
+   "recording_id": "telugu_itw_004",
+   "sample_id": "telugu_030",
+   "ref_speakers": 8,
+   "duration_s": 600.1,
+   "scoring_region": [
+    0,
+    300.0
+   ],
+   "reference": "annotated_transcript",
+   "checksum": "f5a3ab0f528ec36d870806f86224bec8f983f93749c8ce546a63ee25ec4579b9",
+   "fallback": false,
+   "exposure": {
+    "community-1": "unknown",
+    "nemotron": "unknown",
+    "anuvani": "known_overlap"
+   }
+  },
+  {
+   "id": "KN-01",
+   "corpus": "indic-diarbench",
+   "split": "test",
+   "language": "Kannada",
+   "condition": "near_field",
+   "recording_id": "kannada_nf_001",
+   "sample_id": "kannada_025",
+   "ref_speakers": 7,
+   "duration_s": 196.1,
+   "scoring_region": [
+    0,
+    196.1
+   ],
+   "reference": "annotated_transcript",
+   "checksum": "31b543295b2f98dcf1723e73a4623df5ca9df80f277ae4ffa8b2546c40e70af8",
+   "fallback": true,
+   "exposure": {
+    "community-1": "unknown",
+    "nemotron": "unknown",
+    "anuvani": "known_overlap"
+   }
+  },
+  {
+   "id": "KN-02",
+   "corpus": "indic-diarbench",
+   "split": "test",
+   "language": "Kannada",
+   "condition": "in_the_wild",
+   "recording_id": "kannada_itw_012",
+   "sample_id": "kannada_039",
+   "ref_speakers": 8,
+   "duration_s": 335.0,
+   "scoring_region": [
+    0,
+    300.0
+   ],
+   "reference": "annotated_transcript",
+   "checksum": "64838f5f5d95271f69563f4aff7d22ae375e916fdc44889314d7a569de401f99",
+   "fallback": false,
+   "exposure": {
+    "community-1": "unknown",
+    "nemotron": "unknown",
+    "anuvani": "known_overlap"
+   }
+  },
+  {
+   "id": "AMI-01",
+   "corpus": "ami",
+   "split": "test",
+   "language": "English",
+   "condition": "sdm",
+   "recording_id": "ES2004a",
+   "sample_id": null,
+   "ref_speakers": 4,
+   "duration_s": 1049.355,
+   "scoring_region": [
+    0.0,
+    1049.355
+   ],
+   "reference": "only_words_rttm",
+   "checksum": "69c85172e6143a1019946897155dfe7f20e154c2630a3ae342f97443c1b4729e",
+   "fallback": true,
+   "exposure": {
+    "community-1": "known_overlap",
+    "nemotron": "unknown",
+    "anuvani": "unknown"
+   }
+  },
+  {
+   "id": "AMI-02",
+   "corpus": "ami",
+   "split": "test",
+   "language": "English",
+   "condition": "sdm",
+   "recording_id": "EN2002a",
+   "sample_id": null,
+   "ref_speakers": 4,
+   "duration_s": 2142.709,
+   "scoring_region": [
+    0.0,
+    2142.709
+   ],
+   "reference": "only_words_rttm",
+   "checksum": "9c7e9ed0ff2c7f4a5ffe15b49fd390359787c57700dc3cb85ca7c955d0bbe244",
+   "fallback": true,
+   "exposure": {
+    "community-1": "known_overlap",
+    "nemotron": "unknown",
+    "anuvani": "unknown"
+   }
+  },
+  {
+   "id": "AMI-03",
+   "corpus": "ami",
+   "split": "test",
+   "language": "English",
+   "condition": "sdm",
+   "recording_id": "IS1009a",
+   "sample_id": null,
+   "ref_speakers": 4,
+   "duration_s": 838.833,
+   "scoring_region": [
+    0.0,
+    838.833
+   ],
+   "reference": "only_words_rttm",
+   "checksum": "e2f117f4e5166f674b2f793fbb89630e447253e47e9e30f3ed4705a15082fdd7",
+   "fallback": true,
+   "exposure": {
+    "community-1": "known_overlap",
+    "nemotron": "unknown",
+    "anuvani": "unknown"
+   }
+  },
+  {
+   "id": "AMI-04",
+   "corpus": "ami",
+   "split": "test",
+   "language": "English",
+   "condition": "sdm",
+   "recording_id": "TS3003a",
+   "sample_id": null,
+   "ref_speakers": 4,
+   "duration_s": 1505.643,
+   "scoring_region": [
+    0.0,
+    1505.643
+   ],
+   "reference": "only_words_rttm",
+   "checksum": "34649d19cd4c9f56ef0dfdca0ed6c2571178f9f79b5b30ec0c80e6133aa96583",
+   "fallback": false,
+   "exposure": {
+    "community-1": "known_overlap",
+    "nemotron": "unknown",
+    "anuvani": "unknown"
+   }
+  },
+  {
+   "id": "AMI-05",
+   "corpus": "ami",
+   "split": "validation",
+   "language": "English",
+   "condition": "sdm",
+   "recording_id": "ES2011a",
+   "sample_id": null,
+   "ref_speakers": 4,
+   "duration_s": 1113.845,
+   "scoring_region": [
+    0.0,
+    1113.845
+   ],
+   "reference": "only_words_rttm",
+   "checksum": "ccc58fe6a3793f1cf93166f5772c458e4cf854304a461eb71e5a62b9419cbc09",
+   "fallback": false,
+   "exposure": {
+    "community-1": "known_overlap",
+    "nemotron": "unknown",
+    "anuvani": "unknown"
+   }
+  },
+  {
+   "id": "AMI-06",
+   "corpus": "ami",
+   "split": "validation",
+   "language": "English",
+   "condition": "sdm",
+   "recording_id": "IS1008a",
+   "sample_id": null,
+   "ref_speakers": 4,
+   "duration_s": 943.833,
+   "scoring_region": [
+    0.0,
+    943.833
+   ],
+   "reference": "only_words_rttm",
+   "checksum": "fb37ce8283fd6e3defd6bb42acb968de1482c0e7801e2f75727f13358e2bd127",
+   "fallback": false,
+   "exposure": {
+    "community-1": "known_overlap",
+    "nemotron": "unknown",
+    "anuvani": "unknown"
+   }
+  },
+  {
+   "id": "VC-01",
+   "corpus": "voxconverse",
+   "split": "dev",
+   "language": "English",
+   "condition": "in_the_wild",
+   "recording_id": "cjfer",
+   "sample_id": null,
+   "ref_speakers": 15,
+   "duration_s": null,
+   "scoring_region": [
+    0,
+    300.0
+   ],
+   "reference": "dev_rttm",
+   "checksum": "1636332d78c908cb33d7351ef427780a8bdfd896b77c4ea371d67400da54a3e5",
+   "fallback": true,
+   "exposure": {
+    "community-1": "known_overlap",
+    "nemotron": "unknown",
+    "anuvani": "unknown"
+   }
+  },
+  {
+   "id": "VC-02",
+   "corpus": "voxconverse",
+   "split": "dev",
+   "language": "English",
+   "condition": "in_the_wild",
+   "recording_id": "fkvvo",
+   "sample_id": null,
+   "ref_speakers": 9,
+   "duration_s": null,
+   "scoring_region": [
+    0,
+    300.0
+   ],
+   "reference": "dev_rttm",
+   "checksum": "9c34ce3ac5f36ca217449a8b5e07b53e63e137d60f466c1f70a8d6359f99738f",
+   "fallback": true,
+   "exposure": {
+    "community-1": "known_overlap",
+    "nemotron": "unknown",
+    "anuvani": "unknown"
+   }
+  },
+  {
+   "id": "VC-03",
+   "corpus": "voxconverse",
+   "split": "dev",
+   "language": "English",
+   "condition": "in_the_wild",
+   "recording_id": "aisvi",
+   "sample_id": null,
+   "ref_speakers": 8,
+   "duration_s": null,
+   "scoring_region": [
+    0,
+    300.0
+   ],
+   "reference": "dev_rttm",
+   "checksum": "aa017c9238e8d90a14eb551c9e97492300454d31f023e3b669e217e6bddb78c8",
+   "fallback": true,
+   "exposure": {
+    "community-1": "known_overlap",
+    "nemotron": "unknown",
+    "anuvani": "unknown"
+   }
+  },
+  {
+   "id": "VC-04",
+   "corpus": "voxconverse",
+   "split": "dev",
+   "language": "English",
+   "condition": "in_the_wild",
+   "recording_id": "eziem",
+   "sample_id": null,
+   "ref_speakers": 8,
+   "duration_s": null,
+   "scoring_region": [
+    0,
+    300.0
+   ],
+   "reference": "dev_rttm",
+   "checksum": "8acaabc90e1a035f27945f5b32a3b305dacbab9b29c9367dfd09cfb6cb1e1b7d",
+   "fallback": false,
+   "exposure": {
+    "community-1": "known_overlap",
+    "nemotron": "unknown",
+    "anuvani": "unknown"
+   }
+  },
+  {
+   "id": "VC-05",
+   "corpus": "voxconverse",
+   "split": "dev",
+   "language": "English",
+   "condition": "in_the_wild",
+   "recording_id": "bdopb",
+   "sample_id": null,
+   "ref_speakers": 7,
+   "duration_s": null,
+   "scoring_region": [
+    0,
+    300.0
+   ],
+   "reference": "dev_rttm",
+   "checksum": "eb7ffc208a294b3d24b19a1586d8867793728b80c663b2214436fcef79b3448a",
+   "fallback": false,
+   "exposure": {
+    "community-1": "known_overlap",
+    "nemotron": "unknown",
+    "anuvani": "unknown"
+   }
+  },
+  {
+   "id": "VC-06",
+   "corpus": "voxconverse",
+   "split": "dev",
+   "language": "English",
+   "condition": "in_the_wild",
+   "recording_id": "eapdk",
+   "sample_id": null,
+   "ref_speakers": 7,
+   "duration_s": null,
+   "scoring_region": [
+    0,
+    300.0
+   ],
+   "reference": "dev_rttm",
+   "checksum": "8b92bec1940e8a9651542376b0de2622e5038938d43d29e93cb0b8bf654fc04b",
+   "fallback": false,
+   "exposure": {
+    "community-1": "known_overlap",
+    "nemotron": "unknown",
+    "anuvani": "unknown"
+   }
+  }
+ ]
+}

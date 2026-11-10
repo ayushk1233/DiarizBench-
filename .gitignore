@@ -1,36 +1,93 @@
-# ---- Python / caches ----
+# Local Python environments, caches and editor state
+.venv*/
+venv/
+env/
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/
+tmp/
 
-# ---- Virtual environments ----
-.venv-*/
-venv/
-env/
-
-# ---- Data (audio, references, hypotheses, runs) — large / generated ----
-data/
-
-# ---- Local-only tooling (scoring + orchestration run locally, not on Kaggle) ----
-harness/
-scripts/
-third_party/
-
-# ---- Docs & non-code ----
-*.md
-*.pdf
-
-# ---- Kaggle: keep only the notebook workflow ----
-# (diarizbench_models.py, smoke_test.py, run_pilot.py, diarizbench_pilot.ipynb)
-kaggle/audio-dataset/
-kaggle/pilot-runs/
-kaggle/pilot-anuvani/
-kaggle/pilot-campp/
-kaggle/pilot-community-1/
-kaggle/pilot-diarizen/
-kaggle/pilot-nemotron/
-kaggle/hf_gate_check.py
+# Credentials, private run wrappers, downloads and model weights
+.env
+.env.*
+!.env.example
+**/kaggle.json
+**/credentials*.json
+**/*token*.txt
+*.log
+*.zip
+*.tar
+*.tar.gz
+*.parquet
+*.safetensors
+*.pt
+*.pth
+*.onnx
 kaggle/kernel-metadata.json
 kaggle/notebook*.ipynb
-kaggle/run_community1.py
+kaggle/hf_gate_check.py
+kaggle/audio-dataset/
+kaggle/pilot-*/
+# Publish only the reusable, credential-free kernel templates.
+!kaggle/pilot-runs/
+kaggle/pilot-runs/*
+!kaggle/pilot-runs/kernel_community1.py
+!kaggle/pilot-runs/kernel_nemotron.py
+!kaggle/pilot-runs/kernel_anuvani.py
+!kaggle/pilot-runs/kernel_timing.py
+
+# No audio or video in Git, including future additions.
+*.wav
+*.flac
+*.mp3
+*.m4a
+*.aac
+*.ogg
+*.opus
+*.aiff
+*.aif
+*.webm
+*.mp4
+*.mov
+data/audio/
+
+# Keep non-audio evidence; exclude local extraction/download scratch files.
+data/runs/.matplotlib/
+scripts/audio_manifest.json
+scripts/ami_paths.txt
+scripts/indic_metadata.json
+scripts/indic_reference_summary.json
+scripts/extract_corpus_metadata2.py
+scripts/extract_indic_4.py
+scripts/extract_ami_paths.py
+scripts/extract_ami.py
+scripts/extract_corpus_metadata.py
+
+# Curated documentation and design sources only.
+docs/*
+!docs/main.md
+!docs/METHODOLOGY.md
+!docs/frontend-template.html
+!docs/product-sections.html
+!docs/product.css
+!docs/product.js
+!docs/DATA.md
+!docs/assets/
+docs/assets/*
+!docs/assets/*.png
+!docs/assets/*.svg
+
+# Publish core deliverables only. The full listening HTML embeds audio and stays local.
+submission/*
+!submission/Ayush_Kumar_Q1_Main.pdf
+!submission/Ayush_Kumar_Q1_OnePager.pdf
+!submission/Ayush_Kumar_Q1_Leaderboard.pdf
+!submission/Ayush_Kumar_Q1_Leaderboard_Design.html
+FDE_Take_Home_Assessment_FIRST.pdf
+
+# Preserve vendored source and its license, never nested repository metadata.
+**/.git/

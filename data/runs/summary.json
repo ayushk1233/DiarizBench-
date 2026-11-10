@@ -1,0 +1,593 @@
+{
+ "community-1": {
+  "load_s": 0.52,
+  "jobs": {
+   "HI-01": {
+    "rid": "HI-01",
+    "file_id": "hindi_nf_001",
+    "status": "ok",
+    "infer_s": 12.37,
+    "turns": 105,
+    "num_speakers": 6
+   },
+   "HI-02": {
+    "rid": "HI-02",
+    "file_id": "hindi_itw_004",
+    "status": "ok",
+    "infer_s": 19.17,
+    "turns": 85,
+    "num_speakers": 4
+   },
+   "BN-01": {
+    "rid": "BN-01",
+    "file_id": "bengali_nf_001",
+    "status": "ok",
+    "infer_s": 13.64,
+    "turns": 161,
+    "num_speakers": 4
+   },
+   "BN-02": {
+    "rid": "BN-02",
+    "file_id": "bengali_itw_008",
+    "status": "ok",
+    "infer_s": 20.22,
+    "turns": 78,
+    "num_speakers": 6
+   },
+   "MR-01": {
+    "rid": "MR-01",
+    "file_id": "marathi_nf_002",
+    "status": "ok",
+    "infer_s": 11.61,
+    "turns": 68,
+    "num_speakers": 2
+   },
+   "MR-02": {
+    "rid": "MR-02",
+    "file_id": "marathi_itw_008",
+    "status": "ok",
+    "infer_s": 19.7,
+    "turns": 90,
+    "num_speakers": 4
+   },
+   "TA-01": {
+    "rid": "TA-01",
+    "file_id": "tamil_nf_001",
+    "status": "ok",
+    "infer_s": 8.99,
+    "turns": 70,
+    "num_speakers": 3
+   },
+   "TA-02": {
+    "rid": "TA-02",
+    "file_id": "tamil_itw_018",
+    "status": "ok",
+    "infer_s": 19.41,
+    "turns": 86,
+    "num_speakers": 2
+   },
+   "TE-01": {
+    "rid": "TE-01",
+    "file_id": "telugu_nf_001",
+    "status": "ok",
+    "infer_s": 12.39,
+    "turns": 156,
+    "num_speakers": 5
+   },
+   "TE-02": {
+    "rid": "TE-02",
+    "file_id": "telugu_itw_004",
+    "status": "ok",
+    "infer_s": 19.82,
+    "turns": 221,
+    "num_speakers": 7
+   },
+   "KN-01": {
+    "rid": "KN-01",
+    "file_id": "kannada_nf_001",
+    "status": "ok",
+    "infer_s": 13.16,
+    "turns": 104,
+    "num_speakers": 5
+   },
+   "KN-02": {
+    "rid": "KN-02",
+    "file_id": "kannada_itw_012",
+    "status": "ok",
+    "infer_s": 19.82,
+    "turns": 137,
+    "num_speakers": 7
+   },
+   "AMI-01": {
+    "rid": "AMI-01",
+    "file_id": "ES2004a",
+    "status": "ok",
+    "infer_s": 77.37,
+    "turns": 291,
+    "num_speakers": 4
+   },
+   "AMI-02": {
+    "rid": "AMI-02",
+    "file_id": "EN2002a",
+    "status": "ok",
+    "infer_s": 180.48,
+    "turns": 960,
+    "num_speakers": 4
+   },
+   "AMI-03": {
+    "rid": "AMI-03",
+    "file_id": "IS1009a",
+    "status": "ok",
+    "infer_s": 59.86,
+    "turns": 237,
+    "num_speakers": 4
+   },
+   "AMI-04": {
+    "rid": "AMI-04",
+    "file_id": "TS3003a",
+    "status": "ok",
+    "infer_s": 117.3,
+    "turns": 280,
+    "num_speakers": 2
+   },
+   "AMI-05": {
+    "rid": "AMI-05",
+    "file_id": "ES2011a",
+    "status": "ok",
+    "infer_s": 83.12,
+    "turns": 284,
+    "num_speakers": 3
+   },
+   "AMI-06": {
+    "rid": "AMI-06",
+    "file_id": "IS1008a",
+    "status": "ok",
+    "infer_s": 67.44,
+    "turns": 175,
+    "num_speakers": 4
+   },
+   "VC-01": {
+    "rid": "VC-01",
+    "file_id": "cjfer",
+    "status": "ok",
+    "infer_s": 19.71,
+    "turns": 44,
+    "num_speakers": 13
+   },
+   "VC-02": {
+    "rid": "VC-02",
+    "file_id": "fkvvo",
+    "status": "ok",
+    "infer_s": 20.49,
+    "turns": 18,
+    "num_speakers": 7
+   },
+   "VC-03": {
+    "rid": "VC-03",
+    "file_id": "aisvi",
+    "status": "ok",
+    "infer_s": 19.37,
+    "turns": 40,
+    "num_speakers": 8
+   },
+   "VC-04": {
+    "rid": "VC-04",
+    "file_id": "eziem",
+    "status": "ok",
+    "infer_s": 11.02,
+    "turns": 33,
+    "num_speakers": 7
+   },
+   "VC-05": {
+    "rid": "VC-05",
+    "file_id": "bdopb",
+    "status": "ok",
+    "infer_s": 19.87,
+    "turns": 42,
+    "num_speakers": 6
+   },
+   "VC-06": {
+    "rid": "VC-06",
+    "file_id": "eapdk",
+    "status": "ok",
+    "infer_s": 19.97,
+    "turns": 7,
+    "num_speakers": 5
+   }
+  }
+ },
+ "nemotron": {
+  "load_s": 0.64,
+  "jobs": {
+   "HI-01": {
+    "rid": "HI-01",
+    "file_id": "hindi_nf_001",
+    "status": "ok",
+    "infer_s": 16.59,
+    "turns": 123,
+    "num_speakers": 8
+   },
+   "HI-02": {
+    "rid": "HI-02",
+    "file_id": "hindi_itw_004",
+    "status": "ok",
+    "infer_s": 24.08,
+    "turns": 105,
+    "num_speakers": 4
+   },
+   "BN-01": {
+    "rid": "BN-01",
+    "file_id": "bengali_nf_001",
+    "status": "ok",
+    "infer_s": 16.69,
+    "turns": 152,
+    "num_speakers": 6
+   },
+   "BN-02": {
+    "rid": "BN-02",
+    "file_id": "bengali_itw_008",
+    "status": "ok",
+    "infer_s": 24.24,
+    "turns": 63,
+    "num_speakers": 6
+   },
+   "MR-01": {
+    "rid": "MR-01",
+    "file_id": "marathi_nf_002",
+    "status": "ok",
+    "infer_s": 14.52,
+    "turns": 127,
+    "num_speakers": 4
+   },
+   "MR-02": {
+    "rid": "MR-02",
+    "file_id": "marathi_itw_008",
+    "status": "ok",
+    "infer_s": 24.46,
+    "turns": 18,
+    "num_speakers": 5
+   },
+   "TA-01": {
+    "rid": "TA-01",
+    "file_id": "tamil_nf_001",
+    "status": "ok",
+    "infer_s": 11.97,
+    "turns": 49,
+    "num_speakers": 3
+   },
+   "TA-02": {
+    "rid": "TA-02",
+    "file_id": "tamil_itw_018",
+    "status": "ok",
+    "infer_s": 24.44,
+    "turns": 142,
+    "num_speakers": 3
+   },
+   "TE-01": {
+    "rid": "TE-01",
+    "file_id": "telugu_nf_001",
+    "status": "ok",
+    "infer_s": 15.43,
+    "turns": 88,
+    "num_speakers": 5
+   },
+   "TE-02": {
+    "rid": "TE-02",
+    "file_id": "telugu_itw_004",
+    "status": "ok",
+    "infer_s": 24.38,
+    "turns": 200,
+    "num_speakers": 7
+   },
+   "KN-01": {
+    "rid": "KN-01",
+    "file_id": "kannada_nf_001",
+    "status": "ok",
+    "infer_s": 15.67,
+    "turns": 112,
+    "num_speakers": 4
+   },
+   "KN-02": {
+    "rid": "KN-02",
+    "file_id": "kannada_itw_012",
+    "status": "ok",
+    "infer_s": 24.42,
+    "turns": 55,
+    "num_speakers": 5
+   },
+   "AMI-01": {
+    "rid": "AMI-01",
+    "file_id": "ES2004a",
+    "status": "ok",
+    "infer_s": 85.12,
+    "turns": 585,
+    "num_speakers": 4
+   },
+   "AMI-02": {
+    "rid": "AMI-02",
+    "file_id": "EN2002a",
+    "status": "ok",
+    "infer_s": 173.25,
+    "turns": 1654,
+    "num_speakers": 4
+   },
+   "AMI-03": {
+    "rid": "AMI-03",
+    "file_id": "IS1009a",
+    "status": "ok",
+    "infer_s": 68.05,
+    "turns": 410,
+    "num_speakers": 4
+   },
+   "AMI-04": {
+    "rid": "AMI-04",
+    "file_id": "TS3003a",
+    "status": "ok",
+    "infer_s": 120.05,
+    "turns": 613,
+    "num_speakers": 4
+   },
+   "AMI-05": {
+    "rid": "AMI-05",
+    "file_id": "ES2011a",
+    "status": "ok",
+    "infer_s": 87.47,
+    "turns": 557,
+    "num_speakers": 4
+   },
+   "AMI-06": {
+    "rid": "AMI-06",
+    "file_id": "IS1008a",
+    "status": "ok",
+    "infer_s": 74.35,
+    "turns": 366,
+    "num_speakers": 4
+   },
+   "VC-01": {
+    "rid": "VC-01",
+    "file_id": "cjfer",
+    "status": "ok",
+    "infer_s": 23.53,
+    "turns": 115,
+    "num_speakers": 8
+   },
+   "VC-02": {
+    "rid": "VC-02",
+    "file_id": "fkvvo",
+    "status": "ok",
+    "infer_s": 24.02,
+    "turns": 23,
+    "num_speakers": 8
+   },
+   "VC-03": {
+    "rid": "VC-03",
+    "file_id": "aisvi",
+    "status": "ok",
+    "infer_s": 24.0,
+    "turns": 34,
+    "num_speakers": 8
+   },
+   "VC-04": {
+    "rid": "VC-04",
+    "file_id": "eziem",
+    "status": "ok",
+    "infer_s": 14.35,
+    "turns": 32,
+    "num_speakers": 8
+   },
+   "VC-05": {
+    "rid": "VC-05",
+    "file_id": "bdopb",
+    "status": "ok",
+    "infer_s": 23.79,
+    "turns": 27,
+    "num_speakers": 6
+   },
+   "VC-06": {
+    "rid": "VC-06",
+    "file_id": "eapdk",
+    "status": "ok",
+    "infer_s": 23.84,
+    "turns": 10,
+    "num_speakers": 6
+   }
+  }
+ },
+ "anuvani": {
+  "load_s": 13.29,
+  "jobs": {
+   "HI-01": {
+    "rid": "HI-01",
+    "file_id": "hindi_nf_001",
+    "status": "ok",
+    "infer_s": 10.29,
+    "turns": 55,
+    "num_speakers": 8
+   },
+   "HI-02": {
+    "rid": "HI-02",
+    "file_id": "hindi_itw_004",
+    "status": "ok",
+    "infer_s": 16.32,
+    "turns": 59,
+    "num_speakers": 4
+   },
+   "BN-01": {
+    "rid": "BN-01",
+    "file_id": "bengali_nf_001",
+    "status": "ok",
+    "infer_s": 10.65,
+    "turns": 104,
+    "num_speakers": 6
+   },
+   "BN-02": {
+    "rid": "BN-02",
+    "file_id": "bengali_itw_008",
+    "status": "ok",
+    "infer_s": 15.35,
+    "turns": 56,
+    "num_speakers": 6
+   },
+   "MR-01": {
+    "rid": "MR-01",
+    "file_id": "marathi_nf_002",
+    "status": "ok",
+    "infer_s": 9.3,
+    "turns": 61,
+    "num_speakers": 4
+   },
+   "MR-02": {
+    "rid": "MR-02",
+    "file_id": "marathi_itw_008",
+    "status": "ok",
+    "infer_s": 15.48,
+    "turns": 41,
+    "num_speakers": 4
+   },
+   "TA-01": {
+    "rid": "TA-01",
+    "file_id": "tamil_nf_001",
+    "status": "ok",
+    "infer_s": 7.32,
+    "turns": 32,
+    "num_speakers": 4
+   },
+   "TA-02": {
+    "rid": "TA-02",
+    "file_id": "tamil_itw_018",
+    "status": "ok",
+    "infer_s": 15.91,
+    "turns": 65,
+    "num_speakers": 3
+   },
+   "TE-01": {
+    "rid": "TE-01",
+    "file_id": "telugu_nf_001",
+    "status": "ok",
+    "infer_s": 10.03,
+    "turns": 106,
+    "num_speakers": 7
+   },
+   "TE-02": {
+    "rid": "TE-02",
+    "file_id": "telugu_itw_004",
+    "status": "ok",
+    "infer_s": 15.91,
+    "turns": 146,
+    "num_speakers": 9
+   },
+   "KN-01": {
+    "rid": "KN-01",
+    "file_id": "kannada_nf_001",
+    "status": "ok",
+    "infer_s": 10.0,
+    "turns": 48,
+    "num_speakers": 4
+   },
+   "KN-02": {
+    "rid": "KN-02",
+    "file_id": "kannada_itw_012",
+    "status": "ok",
+    "infer_s": 15.67,
+    "turns": 14,
+    "num_speakers": 7
+   },
+   "AMI-01": {
+    "rid": "AMI-01",
+    "file_id": "ES2004a",
+    "status": "ok",
+    "infer_s": 55.81,
+    "turns": 162,
+    "num_speakers": 4
+   },
+   "AMI-02": {
+    "rid": "AMI-02",
+    "file_id": "EN2002a",
+    "status": "ok",
+    "infer_s": 114.29,
+    "turns": 533,
+    "num_speakers": 4
+   },
+   "AMI-03": {
+    "rid": "AMI-03",
+    "file_id": "IS1009a",
+    "status": "ok",
+    "infer_s": 44.24,
+    "turns": 133,
+    "num_speakers": 5
+   },
+   "AMI-04": {
+    "rid": "AMI-04",
+    "file_id": "TS3003a",
+    "status": "ok",
+    "infer_s": 80.07,
+    "turns": 136,
+    "num_speakers": 3
+   },
+   "AMI-05": {
+    "rid": "AMI-05",
+    "file_id": "ES2011a",
+    "status": "ok",
+    "infer_s": 59.47,
+    "turns": 192,
+    "num_speakers": 3
+   },
+   "AMI-06": {
+    "rid": "AMI-06",
+    "file_id": "IS1008a",
+    "status": "ok",
+    "infer_s": 50.25,
+    "turns": 95,
+    "num_speakers": 5
+   },
+   "VC-01": {
+    "rid": "VC-01",
+    "file_id": "cjfer",
+    "status": "ok",
+    "infer_s": 15.7,
+    "turns": 25,
+    "num_speakers": 13
+   },
+   "VC-02": {
+    "rid": "VC-02",
+    "file_id": "fkvvo",
+    "status": "ok",
+    "infer_s": 15.82,
+    "turns": 17,
+    "num_speakers": 8
+   },
+   "VC-03": {
+    "rid": "VC-03",
+    "file_id": "aisvi",
+    "status": "ok",
+    "infer_s": 15.91,
+    "turns": 23,
+    "num_speakers": 8
+   },
+   "VC-04": {
+    "rid": "VC-04",
+    "file_id": "eziem",
+    "status": "ok",
+    "infer_s": 9.59,
+    "turns": 21,
+    "num_speakers": 7
+   },
+   "VC-05": {
+    "rid": "VC-05",
+    "file_id": "bdopb",
+    "status": "ok",
+    "infer_s": 15.71,
+    "turns": 21,
+    "num_speakers": 5
+   },
+   "VC-06": {
+    "rid": "VC-06",
+    "file_id": "eapdk",
+    "status": "ok",
+    "infer_s": 15.72,
+    "turns": 8,
+    "num_speakers": 5
+   }
+  }
+ }
+}
