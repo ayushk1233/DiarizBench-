@@ -1,0 +1,36 @@
+# ---- Python / caches ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---- Virtual environments ----
+.venv-*/
+venv/
+env/
+
+# ---- Data (audio, references, hypotheses, runs) — large / generated ----
+data/
+
+# ---- Local-only tooling (scoring + orchestration run locally, not on Kaggle) ----
+harness/
+scripts/
+third_party/
+
+# ---- Docs & non-code ----
+*.md
+*.pdf
+
+# ---- Kaggle: keep only the notebook workflow ----
+# (diarizbench_models.py, smoke_test.py, run_pilot.py, diarizbench_pilot.ipynb)
+kaggle/audio-dataset/
+kaggle/pilot-runs/
+kaggle/pilot-anuvani/
+kaggle/pilot-campp/
+kaggle/pilot-community-1/
+kaggle/pilot-diarizen/
+kaggle/pilot-nemotron/
+kaggle/hf_gate_check.py
+kaggle/kernel-metadata.json
+kaggle/notebook*.ipynb
+kaggle/run_community1.py
