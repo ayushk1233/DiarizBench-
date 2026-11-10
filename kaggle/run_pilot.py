@@ -13,7 +13,7 @@ import glob
 import shutil
 import traceback
 
-from diarizbench_models import get_token, install_deps, LOADERS
+from diarizbench_models import get_token, install_deps, LOADERS, audio_dir
 
 SYSTEMS = ["community-1", "nemotron", "anuvani"]
 RECORDINGS = {  # audio filename id -> RTTM file_id (manifest recording_id)
@@ -28,11 +28,14 @@ RECORDINGS = {  # audio filename id -> RTTM file_id (manifest recording_id)
     "VC-01": "cjfer", "VC-02": "fkvvo", "VC-03": "aisvi",
     "VC-04": "eziem", "VC-05": "bdopb", "VC-06": "eapdk",
 }
-AUDIO_DIR = "/kaggle/input/diarizbench-pilot-audio"
 OUT = "/kaggle/working/output"
 
 
 def main():
+    AUDIO_DIR = audio_dir()
+    if not os.path.isdir(AUDIO_DIR):
+        print(f"!! audio dataset not mounted. Add 'ayuwat/diarizbench-pilot-audio' as a data input, SAVE the notebook, then re-run.")
+        return
     os.makedirs(OUT, exist_ok=True)
     tok = get_token()
     install_deps(tok)

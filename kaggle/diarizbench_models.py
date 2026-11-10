@@ -13,6 +13,20 @@ import subprocess
 SP = sysconfig.get_paths()["platlib"]
 
 
+def audio_dir():
+    """Locate the mounted audio dataset, tolerating name/path differences.
+
+    Kaggle mounts datasets under /kaggle/input/<slug>/, but newer layouts can
+    nest them under /kaggle/input/datasets/<slug>/. We just find any directory
+    under /kaggle/input/ that contains .wav files.
+    """
+    import glob
+    hits = glob.glob("/kaggle/input/**/*.wav", recursive=True)
+    if hits:
+        return os.path.dirname(hits[0])
+    return "/kaggle/input/diarizbench-pilot-audio"
+
+
 def sh(args):
     r = subprocess.run(args, capture_output=True, text=True)
     print(">>>", " ".join(args), "rc", r.returncode, flush=True)

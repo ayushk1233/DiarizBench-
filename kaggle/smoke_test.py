@@ -8,9 +8,8 @@ import time
 import json
 import traceback
 
-from diarizbench_models import get_token, install_deps, LOADERS
+from diarizbench_models import get_token, install_deps, LOADERS, audio_dir
 
-AUDIO_DIR = "/kaggle/input/diarizbench-pilot-audio"
 OUT = "/kaggle/working/smoke"
 os.makedirs(OUT, exist_ok=True)
 
@@ -20,9 +19,14 @@ SYSTEMS = ["community-1", "nemotron", "anuvani"]
 
 
 def main():
+    AUDIO_DIR = audio_dir()
     if not os.path.isdir(AUDIO_DIR):
-        print(f"!! audio dataset not mounted at {AUDIO_DIR}. Add 'ayuwat/diarizbench-pilot-audio' as a data input.")
+        print(f"!! audio dataset not mounted. Looked at {AUDIO_DIR} and /kaggle/input/.")
+        print("   Add 'ayuwat/diarizbench-pilot-audio' as a data input, SAVE the notebook, then re-run.")
+        import glob
+        print("   /kaggle/input/ contains:", glob.glob("/kaggle/input/*"))
         return
+    print("audio dir:", AUDIO_DIR)
     print("audio files present:", sorted(os.listdir(AUDIO_DIR))[:5], "...", flush=True)
 
     tok = get_token()
