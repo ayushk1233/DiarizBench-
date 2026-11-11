@@ -254,10 +254,11 @@ public availability does not remove dataset or checkpoint restrictions.
 - [One-page summary](submission/Ayush_Kumar_Q1_OnePager.pdf): setup, decisions, result and collar comparison.
 - [Leaderboard sketch](submission/Ayush_Kumar_Q1_Leaderboard.pdf): results, detail, governance and audio-room design.
 - [Interactive design, no bundled audio](submission/Ayush_Kumar_Q1_Leaderboard_Design.html).
+- [Loom video walkthrough](https://www.loom.com/share/8b679c3b23484febb68818ec3cf86945): design choices, measured findings, and product demonstration.
 
 Submission ZIPs, private listening HTML, intermediate renders, local review checklists and
-credential-bearing execution wrappers stay out of Git. The required walkthrough video is pending
-and no placeholder URL is presented as a finished deliverable.
+credential-bearing execution wrappers stay out of Git. The walkthrough is available through the
+Loom link above.
 
 ## Product design
 
